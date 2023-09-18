@@ -60,3 +60,7 @@ cd bmtool
 python setup.py develop
 ```
 ## There is also a pip install for this package as well.
+
+## The last step will be do install your integrated development environment (IDE). One of the most popular is called [VScode](https://code.visualstudio.com). To install use the link and download the latest version. Once you download VScode you can then download the python extension. If you are working on a HPC server it can also be nice to install the remote - SSH extensions. There are also jupyter extensions which can also be installed easily if you plan on using jupyter notebooks. Finally you need to activate your Anaconda environment in VScode. To do so open the Command Palette (Ctrl+Shift+P), type ‘Python: Select Interpreter’, and hit Enter. A list of available interpreters will appear. Select the one that corresponds to your Anaconda environment.
+
+## You should now have everything set up to begain development of biologicaly realistic neural network!

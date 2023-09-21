@@ -16,15 +16,12 @@
 
 ### Section 4
 
-#### This section will go into details about different connection rules and how to check network connections
+#### This section will go into details about network design 
 
 ### Section 5
 
 #### This section will go into details of designing extrinsic inputs to a network
 
-### Section 6
-
-#### This section will contain several different example networks
 
 ### Section 7
 

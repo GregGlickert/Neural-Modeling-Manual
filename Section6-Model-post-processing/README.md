@@ -1,0 +1,2 @@
+# Network-Modeling-Manual
+## Several exammples for how to process the output of a simulation. Some examples will be LFP analysis, correalation of neurons spiking, generating rasters, phase timeing of cells.

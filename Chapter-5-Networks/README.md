@@ -1,1 +1,2 @@
-# This folder is for all things network model design. Things like connection rules and ossilation design. Have an example of a simple PING model and then bring up the importance of time contstants. 
+# Neural-Modeling-Manual Chapter 5
+## This folder is for all things network model design. Things like connection rules and ossilation design. Have an example of a simple PING model and then bring up the importance of time contstants. 

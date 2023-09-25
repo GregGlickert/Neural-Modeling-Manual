@@ -1,4 +1,4 @@
-# Network-Modeling-Manual
+# Neural-Modeling-Manual Chapter 1
 ## The best way to properly set up a python evironmnet is to use [Anaconda](https://www.anaconda.com/download). After installing Anaconda you need to create a python environment. The instructions are slightly different for Windows, MacOS and Linux so i will provide general instuctions and if you need more details there is plenty of infomation online. You need to open up an anconda terminal window. Then you use the command
 
 ```

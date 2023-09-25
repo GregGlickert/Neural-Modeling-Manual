@@ -1,2 +1,2 @@
-# Network-Modeling-Manual
+# Neural-Modeling-Manual Chapter 3
 ## When trying to design a synpase there are many factors the need to be included some of which are tau rise time(τr), tau decay(τd) time, short-term plasicity(STP) and long-term plasicity(LTP). This section will walk through all of these topics and give both infomation and code examples. there will be notebook with each topic found in this folder. Could bring up ossilations and the importance of STP, and time constants or could wait till network design.

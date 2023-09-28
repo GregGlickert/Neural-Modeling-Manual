@@ -35,18 +35,46 @@ pip install neuron-gpu-nightly
 pip install neuron-nightly
 ```
 
-## To check if the evironment you just built is working correctly there is test code in this section. If you are testing the evironment on a high preformance computing server skip to the next code block! To run the test use the following commands. Before running the commands make sure your working directory is the Network-modeling-manual folder on your computer.
+## To check if the evironment you just built is working correctly there is test code in this section. If you are testing the evironment on a high preformance computing server skip to the next code block! To run the test use the following commands. Before running the commands make sure your working directory is the Network-modeling-manual folder on your computer. If you are on windows a line will needed to be changed. Windows is unable to compile modfiles automaticly like MacOS and Linux. You need to change the line 31 in example.py from True to False. Then you need to compile the mechanisms your self. Below is an example what that would look like. Note the first time you run the script it downloads some files but then will have an error. We will then use those downloaded files and the model will run correct the second time. If you are on MacOS or Linux skip the next 2 code blocks
+
+## Change example.py to look like this if you are on windows. The only change is compile_mechanisms=False.
+```python
+build_env_bionet(base_dir='sim_ch01',      # Where to save the scripts and config files
+                 network_dir='network',    # Location of directory containing network files
+                 tstop=2000.0, dt=0.1,     # Run a simulation for 2000 ms at 0.1 ms intervals
+                 report_vars=['v', 'cai'], # Tells simulator we want to record membrane potential and calcium traces
+                 current_clamp={           # Creates a step current from 500.ms to 1500.0 ms
+                     'amp': 0.120,
+                     'delay': 500.0,
+                     'duration': 1000.0
+                 },
+                 include_examples=True,    # Copies components files
+                 compile_mechanisms=False,  # Will try to compile NEURON mechanisms 
+                 config_file='config.json'
+                )
 ```
-cd Section1-Getting\ started\ with\ modeling/network-example/
+## Run example.py once to download needed files. This will have an error that ok for now! Then this code block will go to the mechanism folder and properly compile modfiles. Finally it will go back and run example.py again and this time it should work!
+```
+cd Chapter-1-Getting-started-with-modeling/network-example/
+python example.py
+cd sim_ch01/components/mechanisms/
+nrnivmodl modfiles
+cd ../../..
+python example.py
+```
+## If you are on MacOS or Linux then all you should need to do is this code block
+
+```
+cd Chapter-1-Getting-started-with-modeling/network-example/
 python example.py
 ```
 ## If everything worked properly you should have a graph pop up onto your screen of a voltage trace. Then once you close that plot another graph will appear showing calcium. If these both display then your evironment is set up correctly.
 
 ## Most high preformance computing(HPC) servers use [SLURM](https://slurm.schedmd.com) to manager running code. To test your enviroment on one of these computers first clone this repo onto the server. Make sure that your working directory is the Network-Modeling-Manual folder before running this commands.
- ```
- cd Section1-Getting\ started\ with\ modeling/SLURM-test/
- sbatch batch_build.sh
- ```
+```
+cd Chapter-1-Getting-started-with-modeling/SLURM-test/
+sbatch batch_build.sh
+```
  ## That command will build the test network and the next command will run the network. This test case will run the network on two cores to see if your mpi is set up correctly. Depending on the HPC you are running on you will most likely need to load a module that contains mpi in order to run on multiple cores. Loading this mpi module is different on every HPC so you will need to look into this process for your HPC server. After you have loaded the module use the following command.
 ```
  sbatch batch_run.sh

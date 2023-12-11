@@ -4,8 +4,8 @@
 # TO DO KHURUM
 ## Finish chap2-short-term-plasicity notebook use this [link](https://github.com/tjbanks/synaptic_plasticity/tree/master) as a guide as to kinda what to do and also have this in that chapter as well. We want both forms of STP documented in the manual. Can be put into two different notebooks.
 ## Put the notebooks you worked on at first into the single cell chapter
-##
 #
+# There are also ideas for notebooks in each README in each chapter that need to be added if you finish these before i have time to review your work
 #
 #
 #

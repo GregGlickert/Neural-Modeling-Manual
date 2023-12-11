@@ -1,2 +1,2 @@
 # Neural-Modeling-Manual Chapter 4
-## Models reciveve several different types of inputs. Jitter input, walts code,poisson input,
+## Models reciveve several different types of inputs. Jitter input, walts code,poisson input, Could maybe bring up M1 inputs with short and long burst or other simple inputs like tone and shock inputs as well.

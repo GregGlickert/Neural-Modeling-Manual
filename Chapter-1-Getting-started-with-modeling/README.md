@@ -25,16 +25,6 @@ python -m pip install mpi4py
 pip install neuron
 ```
 
-## If you wish to install the version that supports running code on GPUs you use. To run on GPU you will need to run your model using coreNeuron. This may need other packages installed and is currently changing constanstly. I would not recommend someone new to install this version.
-```
-pip install neuron-gpu-nightly
-```
-
-## There is also a nightly version for the lastest neuron with CPU support that also supports coreNeuron. Same as above this is a very new development and I recommend the average user to install the regular version. 
-```
-pip install neuron-nightly
-```
-
 ## To check if the evironment you just built is working correctly there is test code in this section. If you are testing the evironment on a high preformance computing server skip to the next code block! To run the test use the following commands. Before running the commands make sure your working directory is the Network-modeling-manual folder on your computer. If you are on windows a line will needed to be changed. Windows is unable to compile modfiles automaticly like MacOS and Linux. You need to change the line 31 in example.py from True to False. Then you need to compile the mechanisms your self. Below is an example what that would look like. Note the first time you run the script it downloads some files but then will have an error. We will then use those downloaded files and the model will run correct the second time. If you are on MacOS or Linux skip the next 2 code blocks
 
 ## Change example.py to look like this if you are on windows. The only change is compile_mechanisms=False.

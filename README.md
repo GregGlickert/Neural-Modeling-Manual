@@ -1,7 +1,7 @@
 # Neural-Modeling-Manual Overview
 # Once we start fininshing notebook and putting them in place here we will move the incomplete notebooks to the under development section. This will help us keep track of what needs to be worked on still. For now we dont need to worry about this cause every notebook is under development.
 
-# TO DO KHURUM
+# TO DO KHURAM
 ## Finish chap2-short-term-plasicity notebook use this [link](https://github.com/tjbanks/synaptic_plasticity/tree/master) as a guide as to kinda what to do and also have this in that chapter as well. We want both forms of STP documented in the manual. Can be put into two different notebooks.
 ## Put the notebooks you worked on at first into the single cell chapter
 #

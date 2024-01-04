@@ -1,0 +1,1 @@
+# In this folder contains a some basic tutorials of how to use the Brain Modeling ToolKit(BMTK). These are fairly small models but can give you an idea of syntax when using the BMTK package. Depending on your setup you may get an error when the notebooks are ran. You may need to compile the modfiles yourself.

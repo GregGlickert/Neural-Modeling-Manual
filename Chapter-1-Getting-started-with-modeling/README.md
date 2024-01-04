@@ -3,7 +3,13 @@
 
 ## If you are not very familar with python it may be helpful to go over some basics. Not much advanced software experience is needed to be an good neural modeler. A breif python tutorial can be found at this [link](https://colab.research.google.com/github/data-psl/lectures2020/blob/master/notebooks/01_python_basics.ipynb). This colab goes over some basics of python and two important packages (Numpy and matplotlib).
 
-## To get started with the software install you need to open up an anaconda terminal window. Typically to do this on window after installing anaconda you should have something called the anaconda prompt installed, for Mac and Linux you can just use the terminal(again google is your friend to learn).Once that is open you use the command
+## To get started with the software install you need to open up an anaconda terminal window. Typically to do this on window after installing anaconda you should have something called the anaconda prompt installed, for Mac and Linux you can just use the terminal(again google is your friend to learn). If you have a Mac computer you will need to make sure you have command line tools installed. To do this run this command in terminal to install them. If your not on a Mac you can skip this step
+```
+xcode-select --install
+```
+
+## Once that is open you use the command
+
 
 ```
 conda create --name neural-modeling python=3.8 

@@ -1,0 +1,69 @@
+{
+  "target_simulator": "NEURON",
+  "run": {
+    "tstart": 0.0,
+    "tstop": 1000.0,
+    "dt": 0.1,
+    "dL": 1000.0,
+    "spike_threshold": -15.0,
+    "nsteps_block": 5000
+  },
+  "conditions": {
+    "celsius": 34.0,
+    "v_init": -75.0
+  },
+  "node_sets": {
+    "exc": {
+      "pop_name": "bgnoisevirtExc"
+    }
+  },
+  "inputs": {
+    "noise": {
+      "input_type": "spikes",
+      "module": "sonata",
+      "input_file": "input/ext_inp_poisson.h5",
+      "node_set": "exc"
+    }
+  },
+  "output": {
+    "log_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/output/log.txt",
+    "output_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/output",
+    "spikes_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/output/spikes.h5"
+  },
+  "reports": {},
+  "node_sets_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/node_sets.json",
+  "network": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/circuit_config.json",
+  "config_path": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/simulation_config.json",
+  "config_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network",
+  "components": {
+    "biophysical_neuron_models_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/components/biophysical_neuron_models",
+    "mechanisms_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/components/mechanisms",
+    "morphologies_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/components/morphologies",
+    "point_neuron_models_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/components/point_neuron_models",
+    "synaptic_models_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/components/synaptic_models",
+    "templates_dir": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/components/templates"
+  },
+  "networks": {
+    "nodes": [
+      {
+        "nodes_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/network_nodes.h5",
+        "node_types_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/network_node_types.csv"
+      },
+      {
+        "nodes_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/extnet_nodes.h5",
+        "node_types_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/extnet_node_types.csv"
+      }
+    ],
+    "edges": [
+      {
+        "edges_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/network_network_edges.h5",
+        "edge_types_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/network_network_edge_types.csv"
+      },
+      {
+        "edges_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/extnet_network_edges.h5",
+        "edge_types_file": "/Users/gregglickert/Documents/GitHub/Network-Modeling-Manual/Chapter-5-Building-Networks/Section-X-PING-network/network/extnet_network_edge_types.csv"
+      }
+    ],
+    "gap_juncs": []
+  }
+}

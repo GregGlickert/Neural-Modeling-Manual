@@ -1,10 +1,10 @@
-2024-01-08 15:42:11,767 [INFO] Created log file
-2024-01-08 15:42:12,169 [INFO] Building cells.
-2024-01-08 15:42:12,289 [INFO] Building recurrent connections
-2024-01-08 15:42:26,511 [INFO] Building virtual cell stimulations for noise
-2024-01-08 15:42:26,710 [INFO] Running simulation for 1000.000 ms with the time step 0.100 ms
-2024-01-08 15:42:26,712 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
-2024-01-08 15:42:26,714 [INFO] Block save every 5000 steps
-2024-01-08 15:42:39,629 [INFO]     step:5000 t_sim:500.00 ms
-2024-01-08 15:42:53,237 [INFO]     step:10000 t_sim:1000.00 ms
-2024-01-08 15:42:53,265 [INFO] Simulation completed in 26.55 seconds 
+2024-01-08 16:16:12,126 [INFO] Created log file
+2024-01-08 16:16:12,237 [INFO] Building cells.
+2024-01-08 16:16:12,365 [INFO] Building recurrent connections
+2024-01-08 16:16:26,512 [INFO] Building virtual cell stimulations for noise
+2024-01-08 16:16:26,714 [INFO] Running simulation for 1000.000 ms with the time step 0.100 ms
+2024-01-08 16:16:26,716 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
+2024-01-08 16:16:26,718 [INFO] Block save every 5000 steps
+2024-01-08 16:16:39,598 [INFO]     step:5000 t_sim:500.00 ms
+2024-01-08 16:16:52,364 [INFO]     step:10000 t_sim:1000.00 ms
+2024-01-08 16:16:52,395 [INFO] Simulation completed in 25.68 seconds 

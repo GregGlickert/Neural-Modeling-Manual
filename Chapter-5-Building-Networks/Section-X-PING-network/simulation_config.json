@@ -8,7 +8,7 @@
     "tstart": 0.0,
     "tstop": 500.0,
     "dt": 0.1,
-    "dL": 1000.0,
+    "dL": 10000000.0,
     "spike_threshold": -15.0,
     "nsteps_block": 5000
   },
